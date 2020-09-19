@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: cursive;
+    color: rgb(46, 0, 253);
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: rgb(255, 227, 104);
+}
+
+.mainContainer {
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 120px;
+    background: #9cffc5d3;
+    width: 500px;
+    min-height: 400px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+
+.do_elem {
+    color: black;
+    width: 450px;
+    font-family: cursive;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    border: 1px solid rgb(50, 75, 122);
+    border-radius: 4px;
+    transition: 150ms;
+    background: rgb(136, 221, 255);
+    padding-left: 4px;
+    word-wrap: break-word;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+    position: relative;
+}
+
+.do_input {
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+    text-indent: 5px;
+    margin-right: 20px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+}
+
+.do_btn {
+    background: chartreuse;
+    width: 50px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.do_btn:active {
+    background: darkgreen;
+}
+
+.do_elem:hover > .del_btn {
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+
+.do_elem:hover > .important {
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+
+.del_btn {
+    text-align: center;
+    display: flex;
+    color: black;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    background: #ff2828;
+    border-radius: 5px;
+    top: 8%;
+    transition: opacity 300ms ease;
+}
+
+.important {
+    text-align: center;
+    border-radius: 5px;
+    background: darkorange;
+    top: 8%;
+    position: absolute;
+    right: 74px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
